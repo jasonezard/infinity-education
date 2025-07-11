@@ -1,0 +1,492 @@
+2025-07-11 07:38:54,747 - WDM - INFO - ====== WebDriver manager ======
+2025-07-11 07:38:57,286 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:38:57,305 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:38:57,305 - WDM - INFO - There is no [win64] chromedriver "138.0.7204.101" for browser google-chrome "138.0.7204.101" in cache
+2025-07-11 07:38:57,306 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:38:57,404 - WDM - INFO - WebDriver version 138.0.7204.94 selected
+2025-07-11 07:38:57,408 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-11 07:38:57,409 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-11 07:38:57,468 - WDM - INFO - Driver downloading response is 200
+2025-07-11 07:38:57,638 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:39:07,480 - WDM - INFO - Driver has been saved in cache [C:\Users\jezar\.wdm\drivers\chromedriver\win64\138.0.7204.101]
+2025-07-11 07:39:07,521 - __main__ - ERROR - Failed to setup WebDriver: [WinError 193] %1 is not a valid Win32 application
+2025-07-11 07:39:07,521 - root - ERROR - Critical error: [WinError 193] %1 is not a valid Win32 application
+2025-07-11 07:45:20,225 - WDM - INFO - ====== WebDriver manager ======
+2025-07-11 07:45:20,919 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:45:20,986 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:45:21,020 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:45:21,094 - WDM - INFO - WebDriver version 138.0.7204.94 selected
+2025-07-11 07:45:21,096 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-11 07:45:21,096 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-11 07:45:21,149 - WDM - INFO - Driver downloading response is 200
+2025-07-11 07:45:21,331 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:45:21,472 - WDM - INFO - Driver has been saved in cache [C:\Users\jezar\.wdm\drivers\chromedriver\win64\138.0.7204.94]
+2025-07-11 07:45:21,513 - __main__ - WARNING - Architecture issue detected: [WinError 193] %1 is not a valid Win32 application
+2025-07-11 07:45:21,521 - __main__ - WARNING - Second attempt failed: ChromeDriverManager.__init__() got an unexpected keyword argument 'version'
+2025-07-11 07:45:23,380 - __main__ - INFO - Starting security breach news scraper
+2025-07-11 07:45:23,380 - __main__ - INFO - Starting primary search for security breach articles
+2025-07-11 07:45:23,380 - __main__ - INFO - Searching PRNewswire for 'web application breach'
+2025-07-11 07:45:23,727 - __main__ - ERROR - Error searching PRNewswire for 'web application breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+application+breach&timeframe=30days
+2025-07-11 07:45:23,727 - __main__ - INFO - Searching PRNewswire for 'web application security'
+2025-07-11 07:45:24,015 - __main__ - ERROR - Error searching PRNewswire for 'web application security': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+application+security&timeframe=30days
+2025-07-11 07:45:24,015 - __main__ - INFO - Searching PRNewswire for 'data breach'
+2025-07-11 07:45:24,333 - __main__ - ERROR - Error searching PRNewswire for 'data breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=data+breach&timeframe=30days
+2025-07-11 07:45:24,334 - __main__ - INFO - Searching PRNewswire for 'cyber attack'
+2025-07-11 07:45:24,697 - __main__ - ERROR - Error searching PRNewswire for 'cyber attack': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=cyber+attack&timeframe=30days
+2025-07-11 07:45:24,697 - __main__ - INFO - Searching PRNewswire for 'security breach'
+2025-07-11 07:45:24,984 - __main__ - ERROR - Error searching PRNewswire for 'security breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=security+breach&timeframe=30days
+2025-07-11 07:45:24,984 - __main__ - INFO - Searching PRNewswire for 'vulnerability disclosure'
+2025-07-11 07:45:25,267 - __main__ - ERROR - Error searching PRNewswire for 'vulnerability disclosure': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=vulnerability+disclosure&timeframe=30days
+2025-07-11 07:45:25,267 - __main__ - INFO - Searching PRNewswire for 'web security incident'
+2025-07-11 07:45:25,646 - __main__ - ERROR - Error searching PRNewswire for 'web security incident': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+security+incident&timeframe=30days
+2025-07-11 07:45:25,646 - __main__ - INFO - Searching PRNewswire for 'application security'
+2025-07-11 07:45:25,929 - __main__ - ERROR - Error searching PRNewswire for 'application security': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=application+security&timeframe=30days
+2025-07-11 07:45:25,929 - __main__ - INFO - Searching PRNewswire for 'cyber security breach'
+2025-07-11 07:45:35,419 - __main__ - ERROR - Error searching PRNewswire for 'cyber security breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=cyber+security+breach&timeframe=30days
+2025-07-11 07:45:35,419 - __main__ - INFO - Searching PRNewswire for 'web application vulnerability'
+2025-07-11 07:45:35,653 - __main__ - ERROR - Error searching PRNewswire for 'web application vulnerability': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+application+vulnerability&timeframe=30days
+2025-07-11 07:45:35,654 - __main__ - INFO - Searching PRNewswire for 'security incident response'
+2025-07-11 07:45:35,871 - __main__ - ERROR - Error searching PRNewswire for 'security incident response': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=security+incident+response&timeframe=30days
+2025-07-11 07:45:35,872 - __main__ - INFO - Searching PRNewswire for 'data security breach'
+2025-07-11 07:45:36,183 - __main__ - ERROR - Error searching PRNewswire for 'data security breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=data+security+breach&timeframe=30days
+2025-07-11 07:45:36,184 - __main__ - INFO - Searching BusinessWire for 'web application breach'
+2025-07-11 07:45:36,268 - __main__ - ERROR - Error searching BusinessWire for 'web application breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+breach
+2025-07-11 07:45:36,269 - __main__ - INFO - Searching BusinessWire for 'web application security'
+2025-07-11 07:45:36,331 - __main__ - ERROR - Error searching BusinessWire for 'web application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+security
+2025-07-11 07:45:36,331 - __main__ - INFO - Searching BusinessWire for 'data breach'
+2025-07-11 07:45:36,400 - __main__ - ERROR - Error searching BusinessWire for 'data breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+breach
+2025-07-11 07:45:36,400 - __main__ - INFO - Searching BusinessWire for 'cyber attack'
+2025-07-11 07:45:36,446 - __main__ - ERROR - Error searching BusinessWire for 'cyber attack': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+attack
+2025-07-11 07:45:36,446 - __main__ - INFO - Searching BusinessWire for 'security breach'
+2025-07-11 07:45:36,498 - __main__ - ERROR - Error searching BusinessWire for 'security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+breach
+2025-07-11 07:45:36,498 - __main__ - INFO - Searching BusinessWire for 'vulnerability disclosure'
+2025-07-11 07:45:36,526 - __main__ - ERROR - Error searching BusinessWire for 'vulnerability disclosure': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=vulnerability+disclosure
+2025-07-11 07:45:36,526 - __main__ - INFO - Searching BusinessWire for 'web security incident'
+2025-07-11 07:45:36,559 - __main__ - ERROR - Error searching BusinessWire for 'web security incident': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+security+incident
+2025-07-11 07:45:36,559 - __main__ - INFO - Searching BusinessWire for 'application security'
+2025-07-11 07:45:36,615 - __main__ - ERROR - Error searching BusinessWire for 'application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=application+security
+2025-07-11 07:45:36,616 - __main__ - INFO - Searching BusinessWire for 'cyber security breach'
+2025-07-11 07:45:36,667 - __main__ - ERROR - Error searching BusinessWire for 'cyber security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+security+breach
+2025-07-11 07:45:36,667 - __main__ - INFO - Searching BusinessWire for 'web application vulnerability'
+2025-07-11 07:45:36,702 - __main__ - ERROR - Error searching BusinessWire for 'web application vulnerability': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+vulnerability
+2025-07-11 07:45:36,702 - __main__ - INFO - Searching BusinessWire for 'security incident response'
+2025-07-11 07:45:36,772 - __main__ - ERROR - Error searching BusinessWire for 'security incident response': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+incident+response
+2025-07-11 07:45:36,772 - __main__ - INFO - Searching BusinessWire for 'data security breach'
+2025-07-11 07:45:36,832 - __main__ - ERROR - Error searching BusinessWire for 'data security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+security+breach
+2025-07-11 07:45:36,832 - __main__ - INFO - Searching PRWeb for 'web application breach'
+2025-07-11 07:45:37,187 - __main__ - ERROR - Error searching PRWeb for 'web application breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+application+breach&timeframe=30
+2025-07-11 07:45:37,187 - __main__ - INFO - Searching PRWeb for 'web application security'
+2025-07-11 07:45:37,374 - __main__ - ERROR - Error searching PRWeb for 'web application security': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+application+security&timeframe=30
+2025-07-11 07:45:37,375 - __main__ - INFO - Searching PRWeb for 'data breach'
+2025-07-11 07:45:37,652 - __main__ - ERROR - Error searching PRWeb for 'data breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=data+breach&timeframe=30
+2025-07-11 07:45:37,652 - __main__ - INFO - Searching PRWeb for 'cyber attack'
+2025-07-11 07:45:37,898 - __main__ - ERROR - Error searching PRWeb for 'cyber attack': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=cyber+attack&timeframe=30
+2025-07-11 07:45:37,898 - __main__ - INFO - Searching PRWeb for 'security breach'
+2025-07-11 07:45:38,164 - __main__ - ERROR - Error searching PRWeb for 'security breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=security+breach&timeframe=30
+2025-07-11 07:45:38,165 - __main__ - INFO - Searching PRWeb for 'vulnerability disclosure'
+2025-07-11 07:45:38,582 - __main__ - ERROR - Error searching PRWeb for 'vulnerability disclosure': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=vulnerability+disclosure&timeframe=30
+2025-07-11 07:45:38,582 - __main__ - INFO - Searching PRWeb for 'web security incident'
+2025-07-11 07:45:39,090 - __main__ - ERROR - Error searching PRWeb for 'web security incident': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+security+incident&timeframe=30
+2025-07-11 07:45:39,090 - __main__ - INFO - Searching PRWeb for 'application security'
+2025-07-11 07:45:39,358 - __main__ - ERROR - Error searching PRWeb for 'application security': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=application+security&timeframe=30
+2025-07-11 07:45:39,358 - __main__ - INFO - Searching PRWeb for 'cyber security breach'
+2025-07-11 07:45:39,595 - __main__ - ERROR - Error searching PRWeb for 'cyber security breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=cyber+security+breach&timeframe=30
+2025-07-11 07:45:39,595 - __main__ - INFO - Searching PRWeb for 'web application vulnerability'
+2025-07-11 07:45:39,809 - __main__ - ERROR - Error searching PRWeb for 'web application vulnerability': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+application+vulnerability&timeframe=30
+2025-07-11 07:45:39,809 - __main__ - INFO - Searching PRWeb for 'security incident response'
+2025-07-11 07:45:40,245 - __main__ - ERROR - Error searching PRWeb for 'security incident response': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=security+incident+response&timeframe=30
+2025-07-11 07:45:40,245 - __main__ - INFO - Searching PRWeb for 'data security breach'
+2025-07-11 07:45:40,462 - __main__ - ERROR - Error searching PRWeb for 'data security breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=data+security+breach&timeframe=30
+2025-07-11 07:45:40,462 - __main__ - INFO - No new articles found, running fallback search
+2025-07-11 07:45:40,462 - __main__ - INFO - Running fallback search
+2025-07-11 07:45:40,492 - __main__ - ERROR - Error searching PRNewswire for 'web application breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+application+breach&timeframe=30days
+2025-07-11 07:45:40,523 - __main__ - ERROR - Error searching PRNewswire for 'web application security': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+application+security&timeframe=30days
+2025-07-11 07:45:40,574 - __main__ - ERROR - Error searching PRNewswire for 'data breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=data+breach&timeframe=30days
+2025-07-11 07:45:40,607 - __main__ - ERROR - Error searching PRNewswire for 'cyber attack': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=cyber+attack&timeframe=30days
+2025-07-11 07:45:40,636 - __main__ - ERROR - Error searching PRNewswire for 'security breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=security+breach&timeframe=30days
+2025-07-11 07:45:40,665 - __main__ - ERROR - Error searching PRNewswire for 'vulnerability disclosure': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=vulnerability+disclosure&timeframe=30days
+2025-07-11 07:45:40,697 - __main__ - ERROR - Error searching PRNewswire for 'web security incident': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+security+incident&timeframe=30days
+2025-07-11 07:45:40,730 - __main__ - ERROR - Error searching PRNewswire for 'application security': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=application+security&timeframe=30days
+2025-07-11 07:45:40,757 - __main__ - ERROR - Error searching PRNewswire for 'cyber security breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=cyber+security+breach&timeframe=30days
+2025-07-11 07:45:40,785 - __main__ - ERROR - Error searching PRNewswire for 'web application vulnerability': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=web+application+vulnerability&timeframe=30days
+2025-07-11 07:45:40,821 - __main__ - ERROR - Error searching PRNewswire for 'security incident response': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=security+incident+response&timeframe=30days
+2025-07-11 07:45:40,866 - __main__ - ERROR - Error searching PRNewswire for 'data security breach': 404 Client Error: Not Found for url: https://www.prnewswire.com/news-releases/search/?q=data+security+breach&timeframe=30days
+2025-07-11 07:45:40,908 - __main__ - ERROR - Error searching BusinessWire for 'web application breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+breach
+2025-07-11 07:45:40,950 - __main__ - ERROR - Error searching BusinessWire for 'web application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+security
+2025-07-11 07:45:41,001 - __main__ - ERROR - Error searching BusinessWire for 'data breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+breach
+2025-07-11 07:45:41,048 - __main__ - ERROR - Error searching BusinessWire for 'cyber attack': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+attack
+2025-07-11 07:45:41,081 - __main__ - ERROR - Error searching BusinessWire for 'security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+breach
+2025-07-11 07:45:41,112 - __main__ - ERROR - Error searching BusinessWire for 'vulnerability disclosure': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=vulnerability+disclosure
+2025-07-11 07:45:41,143 - __main__ - ERROR - Error searching BusinessWire for 'web security incident': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+security+incident
+2025-07-11 07:45:41,176 - __main__ - ERROR - Error searching BusinessWire for 'application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=application+security
+2025-07-11 07:45:41,210 - __main__ - ERROR - Error searching BusinessWire for 'cyber security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+security+breach
+2025-07-11 07:45:41,235 - __main__ - ERROR - Error searching BusinessWire for 'web application vulnerability': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+vulnerability
+2025-07-11 07:45:41,266 - __main__ - ERROR - Error searching BusinessWire for 'security incident response': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+incident+response
+2025-07-11 07:45:41,311 - __main__ - ERROR - Error searching BusinessWire for 'data security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+security+breach
+2025-07-11 07:45:41,342 - __main__ - ERROR - Error searching PRWeb for 'web application breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+application+breach&timeframe=30
+2025-07-11 07:45:41,404 - __main__ - ERROR - Error searching PRWeb for 'web application security': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+application+security&timeframe=30
+2025-07-11 07:45:41,426 - __main__ - ERROR - Error searching PRWeb for 'data breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=data+breach&timeframe=30
+2025-07-11 07:45:41,449 - __main__ - ERROR - Error searching PRWeb for 'cyber attack': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=cyber+attack&timeframe=30
+2025-07-11 07:45:41,470 - __main__ - ERROR - Error searching PRWeb for 'security breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=security+breach&timeframe=30
+2025-07-11 07:45:41,496 - __main__ - ERROR - Error searching PRWeb for 'vulnerability disclosure': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=vulnerability+disclosure&timeframe=30
+2025-07-11 07:45:41,540 - __main__ - ERROR - Error searching PRWeb for 'web security incident': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+security+incident&timeframe=30
+2025-07-11 07:45:41,567 - __main__ - ERROR - Error searching PRWeb for 'application security': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=application+security&timeframe=30
+2025-07-11 07:45:41,593 - __main__ - ERROR - Error searching PRWeb for 'cyber security breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=cyber+security+breach&timeframe=30
+2025-07-11 07:45:41,624 - __main__ - ERROR - Error searching PRWeb for 'web application vulnerability': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=web+application+vulnerability&timeframe=30
+2025-07-11 07:45:41,663 - __main__ - ERROR - Error searching PRWeb for 'security incident response': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=security+incident+response&timeframe=30
+2025-07-11 07:45:41,695 - __main__ - ERROR - Error searching PRWeb for 'data security breach': 404 Client Error: Not Found for url: https://www.prweb.com/releases/search/?query=data+security+breach&timeframe=30
+2025-07-11 07:45:41,696 - __main__ - INFO - No articles found even in fallback search
+2025-07-11 07:45:44,390 - teams_notifier - ERROR - Failed to send Teams notification: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: /infiltrateiq.webhook.office.com/webhookb2/aba165b2-dcfd-415a-b002-f7583de6fb8d@7c6b3fd6-1b67-49ae-9c87-2330431b3663/IncomingWebhook/01ad291a089f429cb607ccf3f8b9631d/2ed22f71-338d-4f83-96cd-0b046cb52de3/V2wDss-nNCHylvLK3OsjxFYP56oTAdNdVijRVxiWd-5SU1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000015C3F4882D0>: Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))
+2025-07-11 07:45:44,390 - __main__ - INFO - Scraper execution completed
+2025-07-11 07:45:50,637 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015C3F488B90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/6d695ea3043c4919882878259c7cf659
+2025-07-11 07:45:54,671 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015C3F488E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/6d695ea3043c4919882878259c7cf659
+2025-07-11 07:45:58,738 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015C3F4608A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/6d695ea3043c4919882878259c7cf659
+2025-07-11 07:50:01,469 - __main__ - INFO - Setting up Chrome WebDriver...
+2025-07-11 07:50:01,469 - WDM - INFO - ====== WebDriver manager ======
+2025-07-11 07:50:02,190 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:50:02,220 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:50:02,244 - WDM - INFO - There is no [win64] chromedriver "138.0.7204.94" for browser google-chrome "138.0.7204" in cache
+2025-07-11 07:50:02,244 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:50:02,323 - WDM - INFO - WebDriver version 138.0.7204.94 selected
+2025-07-11 07:50:02,325 - WDM - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-11 07:50:02,325 - WDM - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.94/win32/chromedriver-win32.zip
+2025-07-11 07:50:02,379 - WDM - INFO - Driver downloading response is 200
+2025-07-11 07:50:02,530 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 07:50:02,663 - WDM - INFO - Driver has been saved in cache [C:\Users\jezar\.wdm\drivers\chromedriver\win64\138.0.7204.94]
+2025-07-11 07:50:02,713 - __main__ - ERROR - An unexpected error occurred during WebDriver setup: [WinError 193] %1 is not a valid Win32 application
+2025-07-11 07:50:02,713 - root - CRITICAL - Scraper failed to initialize or run. Aborting. Error: [WinError 193] %1 is not a valid Win32 application
+2025-07-11 07:53:17,541 - __main__ - INFO - Setting up Chrome WebDriver using Selenium Manager...
+2025-07-11 07:53:18,776 - __main__ - INFO - WebDriver setup successful.
+2025-07-11 07:53:18,776 - __main__ - INFO - Starting security breach news scraper
+2025-07-11 07:53:18,776 - __main__ - INFO - Starting primary search for security breach articles
+2025-07-11 07:53:18,776 - __main__ - INFO - Searching PRNewswire for 'web application breach'
+2025-07-11 07:53:19,203 - __main__ - INFO - Searching PRNewswire for 'web application security'
+2025-07-11 07:53:19,635 - __main__ - INFO - Searching PRNewswire for 'data breach'
+2025-07-11 07:53:20,036 - __main__ - INFO - Searching PRNewswire for 'cyber attack'
+2025-07-11 07:53:35,591 - __main__ - INFO - Searching PRNewswire for 'security breach'
+2025-07-11 07:53:38,048 - __main__ - INFO - Searching PRNewswire for 'vulnerability disclosure'
+2025-07-11 07:53:47,129 - __main__ - ERROR - Error searching PRNewswire for 'vulnerability disclosure': 502 Server Error: Bad Gateway for url: https://www.prnewswire.com/search/news/?query=vulnerability+disclosure&pagesize=100&page=1
+2025-07-11 07:53:47,129 - __main__ - INFO - Searching PRNewswire for 'web security incident'
+2025-07-11 07:53:59,015 - __main__ - INFO - Searching PRNewswire for 'application security'
+2025-07-11 07:53:59,603 - __main__ - INFO - Searching PRNewswire for 'cyber security breach'
+2025-07-11 07:54:04,549 - __main__ - INFO - Searching PRNewswire for 'web application vulnerability'
+2025-07-11 07:54:04,967 - __main__ - INFO - Searching PRNewswire for 'security incident response'
+2025-07-11 07:54:05,317 - __main__ - INFO - Searching PRNewswire for 'data security breach'
+2025-07-11 07:54:05,678 - __main__ - INFO - Searching BusinessWire for 'web application breach'
+2025-07-11 07:54:05,764 - __main__ - ERROR - Error searching BusinessWire for 'web application breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+breach
+2025-07-11 07:54:05,764 - __main__ - INFO - Searching BusinessWire for 'web application security'
+2025-07-11 07:54:05,807 - __main__ - ERROR - Error searching BusinessWire for 'web application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+security
+2025-07-11 07:54:05,807 - __main__ - INFO - Searching BusinessWire for 'data breach'
+2025-07-11 07:54:05,854 - __main__ - ERROR - Error searching BusinessWire for 'data breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+breach
+2025-07-11 07:54:05,855 - __main__ - INFO - Searching BusinessWire for 'cyber attack'
+2025-07-11 07:54:05,913 - __main__ - ERROR - Error searching BusinessWire for 'cyber attack': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+attack
+2025-07-11 07:54:05,913 - __main__ - INFO - Searching BusinessWire for 'security breach'
+2025-07-11 07:54:05,962 - __main__ - ERROR - Error searching BusinessWire for 'security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+breach
+2025-07-11 07:54:05,962 - __main__ - INFO - Searching BusinessWire for 'vulnerability disclosure'
+2025-07-11 07:54:06,011 - __main__ - ERROR - Error searching BusinessWire for 'vulnerability disclosure': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=vulnerability+disclosure
+2025-07-11 07:54:06,011 - __main__ - INFO - Searching BusinessWire for 'web security incident'
+2025-07-11 07:54:06,065 - __main__ - ERROR - Error searching BusinessWire for 'web security incident': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+security+incident
+2025-07-11 07:54:06,065 - __main__ - INFO - Searching BusinessWire for 'application security'
+2025-07-11 07:54:06,104 - __main__ - ERROR - Error searching BusinessWire for 'application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=application+security
+2025-07-11 07:54:06,104 - __main__ - INFO - Searching BusinessWire for 'cyber security breach'
+2025-07-11 07:54:06,147 - __main__ - ERROR - Error searching BusinessWire for 'cyber security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+security+breach
+2025-07-11 07:54:06,147 - __main__ - INFO - Searching BusinessWire for 'web application vulnerability'
+2025-07-11 07:54:06,191 - __main__ - ERROR - Error searching BusinessWire for 'web application vulnerability': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+vulnerability
+2025-07-11 07:54:06,191 - __main__ - INFO - Searching BusinessWire for 'security incident response'
+2025-07-11 07:54:06,233 - __main__ - ERROR - Error searching BusinessWire for 'security incident response': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+incident+response
+2025-07-11 07:54:06,233 - __main__ - INFO - Searching BusinessWire for 'data security breach'
+2025-07-11 07:54:06,299 - __main__ - ERROR - Error searching BusinessWire for 'data security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+security+breach
+2025-07-11 07:54:06,299 - __main__ - INFO - Searching PRWeb for 'web application breach'
+2025-07-11 07:54:12,958 - __main__ - ERROR - Error searching PRWeb for 'web application breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+application+breach&num=30
+2025-07-11 07:54:12,958 - __main__ - INFO - Searching PRWeb for 'web application security'
+2025-07-11 07:54:13,208 - __main__ - ERROR - Error searching PRWeb for 'web application security': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+application+security&num=30
+2025-07-11 07:54:13,209 - __main__ - INFO - Searching PRWeb for 'data breach'
+2025-07-11 07:54:22,281 - __main__ - ERROR - Error searching PRWeb for 'data breach': 502 Server Error: Bad Gateway for url: https://www.prweb.com/search/releases/search/?query=data+breach&num=30
+2025-07-11 07:54:22,281 - __main__ - INFO - Searching PRWeb for 'cyber attack'
+2025-07-11 07:54:22,735 - __main__ - ERROR - Error searching PRWeb for 'cyber attack': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=cyber+attack&num=30
+2025-07-11 07:54:22,735 - __main__ - INFO - Searching PRWeb for 'security breach'
+2025-07-11 07:54:40,454 - __main__ - ERROR - Error searching PRWeb for 'security breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=security+breach&num=30
+2025-07-11 07:54:40,454 - __main__ - INFO - Searching PRWeb for 'vulnerability disclosure'
+2025-07-11 07:54:49,531 - __main__ - ERROR - Error searching PRWeb for 'vulnerability disclosure': 502 Server Error: Bad Gateway for url: https://www.prweb.com/search/releases/search/?query=vulnerability+disclosure&num=30
+2025-07-11 07:54:49,532 - __main__ - INFO - Searching PRWeb for 'web security incident'
+2025-07-11 07:54:59,316 - __main__ - ERROR - Error searching PRWeb for 'web security incident': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+security+incident&num=30
+2025-07-11 07:54:59,317 - __main__ - INFO - Searching PRWeb for 'application security'
+2025-07-11 07:55:09,053 - __main__ - ERROR - Error searching PRWeb for 'application security': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=application+security&num=30
+2025-07-11 07:55:09,054 - __main__ - INFO - Searching PRWeb for 'cyber security breach'
+2025-07-11 07:55:18,172 - __main__ - ERROR - Error searching PRWeb for 'cyber security breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=cyber+security+breach&num=30
+2025-07-11 07:55:18,173 - __main__ - INFO - Searching PRWeb for 'web application vulnerability'
+2025-07-11 07:55:18,551 - __main__ - ERROR - Error searching PRWeb for 'web application vulnerability': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+application+vulnerability&num=30
+2025-07-11 07:55:18,552 - __main__ - INFO - Searching PRWeb for 'security incident response'
+2025-07-11 07:55:33,169 - __main__ - ERROR - Error searching PRWeb for 'security incident response': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=security+incident+response&num=30
+2025-07-11 07:55:33,170 - __main__ - INFO - Searching PRWeb for 'data security breach'
+2025-07-11 07:55:41,003 - __main__ - ERROR - Error searching PRWeb for 'data security breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=data+security+breach&num=30
+2025-07-11 07:55:41,003 - __main__ - INFO - No new relevant articles found in primary search. Running fallback search.
+2025-07-11 07:55:41,003 - __main__ - INFO - Running fallback search
+2025-07-11 07:55:43,061 - __main__ - ERROR - Error searching BusinessWire for 'web application breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+breach
+2025-07-11 07:55:43,107 - __main__ - ERROR - Error searching BusinessWire for 'web application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+security
+2025-07-11 07:55:43,155 - __main__ - ERROR - Error searching BusinessWire for 'data breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+breach
+2025-07-11 07:55:43,203 - __main__ - ERROR - Error searching BusinessWire for 'cyber attack': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+attack
+2025-07-11 07:55:43,249 - __main__ - ERROR - Error searching BusinessWire for 'security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+breach
+2025-07-11 07:55:43,298 - __main__ - ERROR - Error searching BusinessWire for 'vulnerability disclosure': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=vulnerability+disclosure
+2025-07-11 07:55:43,347 - __main__ - ERROR - Error searching BusinessWire for 'web security incident': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+security+incident
+2025-07-11 07:55:43,391 - __main__ - ERROR - Error searching BusinessWire for 'application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=application+security
+2025-07-11 07:55:43,422 - __main__ - ERROR - Error searching BusinessWire for 'cyber security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+security+breach
+2025-07-11 07:55:43,457 - __main__ - ERROR - Error searching BusinessWire for 'web application vulnerability': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+vulnerability
+2025-07-11 07:55:43,482 - __main__ - ERROR - Error searching BusinessWire for 'security incident response': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+incident+response
+2025-07-11 07:55:43,510 - __main__ - ERROR - Error searching BusinessWire for 'data security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+security+breach
+2025-07-11 07:55:43,532 - __main__ - ERROR - Error searching PRWeb for 'web application breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+application+breach&num=30
+2025-07-11 07:55:43,556 - __main__ - ERROR - Error searching PRWeb for 'web application security': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+application+security&num=30
+2025-07-11 07:55:43,718 - __main__ - ERROR - Error searching PRWeb for 'data breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=data+breach&num=30
+2025-07-11 07:55:43,745 - __main__ - ERROR - Error searching PRWeb for 'cyber attack': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=cyber+attack&num=30
+2025-07-11 07:55:43,776 - __main__ - ERROR - Error searching PRWeb for 'security breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=security+breach&num=30
+2025-07-11 07:55:43,955 - __main__ - ERROR - Error searching PRWeb for 'vulnerability disclosure': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=vulnerability+disclosure&num=30
+2025-07-11 07:55:43,982 - __main__ - ERROR - Error searching PRWeb for 'web security incident': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+security+incident&num=30
+2025-07-11 07:55:44,016 - __main__ - ERROR - Error searching PRWeb for 'application security': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=application+security&num=30
+2025-07-11 07:55:44,041 - __main__ - ERROR - Error searching PRWeb for 'cyber security breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=cyber+security+breach&num=30
+2025-07-11 07:55:44,063 - __main__ - ERROR - Error searching PRWeb for 'web application vulnerability': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=web+application+vulnerability&num=30
+2025-07-11 07:55:44,087 - __main__ - ERROR - Error searching PRWeb for 'security incident response': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=security+incident+response&num=30
+2025-07-11 07:55:44,109 - __main__ - ERROR - Error searching PRWeb for 'data security breach': 404 Client Error: Not Found for url: https://www.prweb.com/search/releases/search/?query=data+security+breach&num=30
+2025-07-11 07:55:44,110 - __main__ - INFO - No articles found in fallback search.
+2025-07-11 07:55:46,811 - teams_notifier - ERROR - Failed to send Teams notification: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: /infiltrateiq.webhook.office.com/webhookb2/aba165b2-dcfd-415a-b002-f7583de6fb8d@7c6b3fd6-1b67-49ae-9c87-2330431b3663/IncomingWebhook/01ad291a089f429cb607ccf3f8b9631d/2ed22f71-338d-4f83-96cd-0b046cb52de3/V2wDss-nNCHylvLK3OsjxFYP56oTAdNdVijRVxiWd-5SU1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DA6BEFDE50>: Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))
+2025-07-11 07:55:46,812 - __main__ - INFO - Scraper execution completed.
+2025-07-11 07:55:53,105 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DA6BEFE5D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d1cfb42d97a1e5f1b86b681ae84b891b
+2025-07-11 07:55:57,198 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DA6BEFDBD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d1cfb42d97a1e5f1b86b681ae84b891b
+2025-07-11 07:56:01,267 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DA6BD07BB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/d1cfb42d97a1e5f1b86b681ae84b891b
+2025-07-11 07:59:13,431 - __main__ - INFO - Setting up Chrome WebDriver using Selenium Manager...
+2025-07-11 07:59:14,539 - __main__ - INFO - WebDriver setup successful.
+2025-07-11 07:59:14,539 - __main__ - INFO - Starting security breach news scraper run
+2025-07-11 07:59:14,539 - __main__ - INFO - Searching PRNewswire for 'web application breach'
+2025-07-11 07:59:14,982 - __main__ - INFO - Searching PRNewswire for 'web application security'
+2025-07-11 07:59:15,378 - __main__ - INFO - Searching PRNewswire for 'data breach'
+2025-07-11 07:59:15,796 - __main__ - INFO - Searching PRNewswire for 'cyber attack'
+2025-07-11 07:59:32,808 - __main__ - INFO - Searching PRNewswire for 'security breach'
+2025-07-11 07:59:33,255 - __main__ - INFO - Searching PRNewswire for 'vulnerability disclosure'
+2025-07-11 07:59:33,395 - __main__ - INFO - Searching PRNewswire for 'web security incident'
+2025-07-11 07:59:33,770 - __main__ - INFO - Searching PRNewswire for 'application security'
+2025-07-11 07:59:34,115 - __main__ - INFO - Searching PRNewswire for 'cyber security breach'
+2025-07-11 07:59:34,488 - __main__ - INFO - Searching PRNewswire for 'web application vulnerability'
+2025-07-11 07:59:34,901 - __main__ - INFO - Searching PRNewswire for 'security incident response'
+2025-07-11 07:59:35,224 - __main__ - INFO - Searching PRNewswire for 'data security breach'
+2025-07-11 07:59:35,584 - __main__ - INFO - Searching BusinessWire for 'web application breach'
+2025-07-11 07:59:35,585 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web application breach'
+2025-07-11 07:59:39,974 - __main__ - INFO - Searching BusinessWire for 'web application security'
+2025-07-11 07:59:39,974 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web application security'
+2025-07-11 07:59:42,305 - __main__ - INFO - Searching BusinessWire for 'data breach'
+2025-07-11 07:59:42,305 - __main__ - INFO - Performing Selenium search on BusinessWire for 'data breach'
+2025-07-11 07:59:44,628 - __main__ - INFO - Searching BusinessWire for 'cyber attack'
+2025-07-11 07:59:44,628 - __main__ - INFO - Performing Selenium search on BusinessWire for 'cyber attack'
+2025-07-11 07:59:46,925 - __main__ - INFO - Searching BusinessWire for 'security breach'
+2025-07-11 07:59:46,925 - __main__ - INFO - Performing Selenium search on BusinessWire for 'security breach'
+2025-07-11 07:59:49,212 - __main__ - INFO - Searching BusinessWire for 'vulnerability disclosure'
+2025-07-11 07:59:49,213 - __main__ - INFO - Performing Selenium search on BusinessWire for 'vulnerability disclosure'
+2025-07-11 07:59:51,514 - __main__ - INFO - Searching BusinessWire for 'web security incident'
+2025-07-11 07:59:51,514 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web security incident'
+2025-07-11 07:59:53,953 - __main__ - INFO - Searching BusinessWire for 'application security'
+2025-07-11 07:59:53,953 - __main__ - INFO - Performing Selenium search on BusinessWire for 'application security'
+2025-07-11 07:59:56,276 - __main__ - INFO - Searching BusinessWire for 'cyber security breach'
+2025-07-11 07:59:56,276 - __main__ - INFO - Performing Selenium search on BusinessWire for 'cyber security breach'
+2025-07-11 07:59:58,572 - __main__ - INFO - Searching BusinessWire for 'web application vulnerability'
+2025-07-11 07:59:58,572 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web application vulnerability'
+2025-07-11 08:00:00,858 - __main__ - INFO - Searching BusinessWire for 'security incident response'
+2025-07-11 08:00:00,859 - __main__ - INFO - Performing Selenium search on BusinessWire for 'security incident response'
+2025-07-11 08:00:03,173 - __main__ - INFO - Searching BusinessWire for 'data security breach'
+2025-07-11 08:00:03,173 - __main__ - INFO - Performing Selenium search on BusinessWire for 'data security breach'
+2025-07-11 08:00:05,485 - __main__ - INFO - Searching PRWeb for 'web application breach'
+2025-07-11 08:00:06,115 - __main__ - INFO - Processing new article: https://www.prweb.com/releases/business-technology-latest-news/data-analytics-list/
+2025-07-11 08:01:07,308 - __main__ - INFO - Processing new article: https://www.prweb.com/releases/business-technology-latest-news/high-tech-security-list/
+2025-07-11 08:01:38,336 - __main__ - WARNING - Timeout while loading https://www.prweb.com/releases/business-technology-latest-news/high-tech-security-list/
+2025-07-11 08:01:38,337 - __main__ - INFO - Processing new article: https://www.prweb.com/releases/consumer-technology-latest-news/data-analytics-list/
+2025-07-11 08:02:57,652 - __main__ - INFO - Processing new article: https://www.prweb.com/releases/policy-public-interest-latest-news/homeland-security-list/
+2025-07-11 08:03:50,138 - __main__ - INFO - Searching PRWeb for 'web application security'
+2025-07-11 08:04:16,161 - __main__ - INFO - Searching PRWeb for 'data breach'
+2025-07-11 08:04:38,897 - __main__ - WARNING - Server error (502) for PRWeb. Retrying in 2s... (Attempt 1)
+2025-07-11 08:04:54,032 - __main__ - INFO - Searching PRWeb for 'cyber attack'
+2025-07-11 08:05:14,206 - __main__ - INFO - Searching PRWeb for 'security breach'
+2025-07-11 08:05:19,284 - __main__ - INFO - Searching PRWeb for 'vulnerability disclosure'
+2025-07-11 08:05:19,896 - __main__ - INFO - Searching PRWeb for 'web security incident'
+2025-07-11 08:05:31,667 - __main__ - INFO - Searching PRWeb for 'application security'
+2025-07-11 08:05:44,306 - __main__ - INFO - Searching PRWeb for 'cyber security breach'
+2025-07-11 08:05:45,350 - __main__ - INFO - Searching PRWeb for 'web application vulnerability'
+2025-07-11 08:05:46,180 - __main__ - INFO - Searching PRWeb for 'security incident response'
+2025-07-11 08:05:47,110 - __main__ - INFO - Searching PRWeb for 'data security breach'
+2025-07-11 08:05:56,186 - __main__ - WARNING - Server error (502) for PRWeb. Retrying in 2s... (Attempt 1)
+2025-07-11 08:06:07,263 - __main__ - WARNING - Server error (502) for PRWeb. Retrying in 2s... (Attempt 2)
+2025-07-11 08:06:09,935 - __main__ - INFO - Found 3 new raw articles. Filtering and scoring...
+2025-07-11 08:06:09,937 - __main__ - INFO - Found 3 new, geographically relevant articles.
+2025-07-11 08:06:12,195 - teams_notifier - INFO - Successfully sent Teams notification.
+2025-07-11 08:06:12,196 - __main__ - INFO - Scraper execution completed.
+2025-07-11 08:06:18,557 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001344F842850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/8ea0cab0ac0b5e0a689900e90a19e5be
+2025-07-11 08:06:22,630 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001344F842710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/8ea0cab0ac0b5e0a689900e90a19e5be
+2025-07-11 08:06:26,722 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001344F8390F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/8ea0cab0ac0b5e0a689900e90a19e5be
+2025-07-11 08:09:36,717 - __main__ - INFO - Setting up Chrome WebDriver using Selenium Manager...
+2025-07-11 08:09:37,855 - __main__ - INFO - WebDriver setup successful.
+2025-07-11 08:09:37,855 - __main__ - INFO - Starting security breach news scraper run
+2025-07-11 08:09:37,855 - __main__ - INFO - Searching PRNewswire for 'web application breach'
+2025-07-11 08:09:38,278 - __main__ - INFO - Searching PRNewswire for 'web application security'
+2025-07-11 08:09:47,465 - __main__ - INFO - Searching PRNewswire for 'data breach'
+2025-07-11 08:09:47,951 - __main__ - INFO - Searching PRNewswire for 'cyber attack'
+2025-07-11 08:09:48,863 - __main__ - INFO - Searching PRNewswire for 'security breach'
+2025-07-11 08:09:49,504 - __main__ - INFO - Searching PRNewswire for 'vulnerability disclosure'
+2025-07-11 08:09:49,931 - __main__ - INFO - Searching PRNewswire for 'web security incident'
+2025-07-11 08:10:09,490 - __main__ - INFO - Searching PRNewswire for 'application security'
+2025-07-11 08:10:09,823 - __main__ - INFO - Searching PRNewswire for 'cyber security breach'
+2025-07-11 08:10:10,215 - __main__ - INFO - Searching PRNewswire for 'web application vulnerability'
+2025-07-11 08:10:10,609 - __main__ - INFO - Searching PRNewswire for 'security incident response'
+2025-07-11 08:10:10,946 - __main__ - INFO - Searching PRNewswire for 'data security breach'
+2025-07-11 08:10:11,299 - __main__ - INFO - Searching BusinessWire for 'web application breach'
+2025-07-11 08:10:11,299 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web application breach'
+2025-07-11 08:10:15,269 - __main__ - INFO - Searching BusinessWire for 'web application security'
+2025-07-11 08:10:15,269 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web application security'
+2025-07-11 08:10:17,641 - __main__ - INFO - Searching BusinessWire for 'data breach'
+2025-07-11 08:10:17,641 - __main__ - INFO - Performing Selenium search on BusinessWire for 'data breach'
+2025-07-11 08:10:21,159 - __main__ - INFO - Searching BusinessWire for 'cyber attack'
+2025-07-11 08:10:21,160 - __main__ - INFO - Performing Selenium search on BusinessWire for 'cyber attack'
+2025-07-11 08:10:23,879 - __main__ - INFO - Searching BusinessWire for 'security breach'
+2025-07-11 08:10:23,879 - __main__ - INFO - Performing Selenium search on BusinessWire for 'security breach'
+2025-07-11 08:10:26,755 - __main__ - INFO - Searching BusinessWire for 'vulnerability disclosure'
+2025-07-11 08:10:26,756 - __main__ - INFO - Performing Selenium search on BusinessWire for 'vulnerability disclosure'
+2025-07-11 08:10:29,460 - __main__ - INFO - Searching BusinessWire for 'web security incident'
+2025-07-11 08:10:29,461 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web security incident'
+2025-07-11 08:10:32,248 - __main__ - INFO - Searching BusinessWire for 'application security'
+2025-07-11 08:10:32,249 - __main__ - INFO - Performing Selenium search on BusinessWire for 'application security'
+2025-07-11 08:10:35,389 - __main__ - INFO - Searching BusinessWire for 'cyber security breach'
+2025-07-11 08:10:35,389 - __main__ - INFO - Performing Selenium search on BusinessWire for 'cyber security breach'
+2025-07-11 08:10:38,312 - __main__ - INFO - Searching BusinessWire for 'web application vulnerability'
+2025-07-11 08:10:38,313 - __main__ - INFO - Performing Selenium search on BusinessWire for 'web application vulnerability'
+2025-07-11 08:10:40,687 - __main__ - INFO - Searching BusinessWire for 'security incident response'
+2025-07-11 08:10:40,687 - __main__ - INFO - Performing Selenium search on BusinessWire for 'security incident response'
+2025-07-11 08:10:43,221 - __main__ - INFO - Searching BusinessWire for 'data security breach'
+2025-07-11 08:10:43,221 - __main__ - INFO - Performing Selenium search on BusinessWire for 'data security breach'
+2025-07-11 08:10:48,901 - __main__ - INFO - Searching PRWeb for 'web application breach'
+2025-07-11 08:10:49,264 - __main__ - INFO - Processing new article: https://www.prweb.com/releases/business-technology-latest-news/high-tech-security-list/
+2025-07-11 08:11:42,638 - __main__ - INFO - Searching PRWeb for 'web application security'
+2025-07-11 08:11:43,117 - __main__ - INFO - Searching PRWeb for 'data breach'
+2025-07-11 08:12:13,142 - __main__ - ERROR - Request error searching PRWeb for 'data breach': HTTPSConnectionPool(host='www.prweb.com', port=443): Read timed out. (read timeout=30)
+2025-07-11 08:12:13,142 - __main__ - INFO - Searching PRWeb for 'cyber attack'
+2025-07-11 08:12:13,790 - __main__ - INFO - Searching PRWeb for 'security breach'
+2025-07-11 08:12:14,132 - __main__ - INFO - Searching PRWeb for 'vulnerability disclosure'
+2025-07-11 08:12:14,469 - __main__ - INFO - Searching PRWeb for 'web security incident'
+2025-07-11 08:12:14,805 - __main__ - INFO - Searching PRWeb for 'application security'
+2025-07-11 08:12:34,846 - __main__ - INFO - Searching PRWeb for 'cyber security breach'
+2025-07-11 08:12:35,195 - __main__ - INFO - Searching PRWeb for 'web application vulnerability'
+2025-07-11 08:12:35,517 - __main__ - INFO - Searching PRWeb for 'security incident response'
+2025-07-11 08:12:35,881 - __main__ - INFO - Searching PRWeb for 'data security breach'
+2025-07-11 08:12:36,232 - __main__ - INFO - Found 1 new raw articles. Filtering and scoring...
+2025-07-11 08:12:36,232 - __main__ - INFO - Found 1 new, geographically relevant articles.
+2025-07-11 08:12:37,898 - teams_notifier - INFO - Successfully sent Teams notification.
+2025-07-11 08:12:37,899 - __main__ - INFO - Scraper execution completed.
+2025-07-11 08:12:45,129 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C70DE42FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bc9f490d427137f1ba29c033460553d5
+2025-07-11 08:12:49,187 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C70DE43110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bc9f490d427137f1ba29c033460553d5
+2025-07-11 08:12:53,236 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C70DE45220>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/bc9f490d427137f1ba29c033460553d5
+2025-07-11 08:22:22,897 - WDM - INFO - ====== WebDriver manager ======
+2025-07-11 08:22:23,688 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 08:22:23,742 - WDM - INFO - Get LATEST chromedriver version for google-chrome
+2025-07-11 08:22:23,770 - WDM - INFO - Driver [C:\Users\jezar\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver] found in cache
+2025-07-11 08:22:23,770 - __main__ - INFO - ChromeDriver path: C:\Users\jezar\.wdm\drivers\chromedriver\win64\138.0.7204.94\chromedriver-win32/THIRD_PARTY_NOTICES.chromedriver
+2025-07-11 08:22:23,771 - __main__ - WARNING - ChromeDriverManager failed: [WinError 193] %1 is not a valid Win32 application
+2025-07-11 08:22:23,771 - __main__ - INFO - Trying alternative WebDriver setup...
+2025-07-11 08:22:24,961 - __main__ - INFO - Starting security breach news scraper
+2025-07-11 08:22:24,962 - __main__ - INFO - Starting primary search for security breach articles
+2025-07-11 08:22:24,962 - __main__ - INFO - Searching PRNewswire for 'web application breach'
+2025-07-11 08:22:34,209 - __main__ - INFO - Searching PRNewswire for 'web application security'
+2025-07-11 08:22:34,906 - __main__ - INFO - Searching PRNewswire for 'data breach'
+2025-07-11 08:22:35,707 - __main__ - INFO - Searching PRNewswire for 'cyber attack'
+2025-07-11 08:22:44,894 - __main__ - INFO - Searching PRNewswire for 'security breach'
+2025-07-11 08:22:45,987 - __main__ - INFO - Searching PRNewswire for 'vulnerability disclosure'
+2025-07-11 08:22:57,600 - __main__ - INFO - Searching PRNewswire for 'web security incident'
+2025-07-11 08:23:13,049 - __main__ - INFO - Searching PRNewswire for 'application security'
+2025-07-11 08:23:13,419 - __main__ - INFO - Searching PRNewswire for 'cyber security breach'
+2025-07-11 08:23:27,547 - __main__ - INFO - Searching PRNewswire for 'web application vulnerability'
+2025-07-11 08:23:36,737 - __main__ - INFO - Searching PRNewswire for 'security incident response'
+2025-07-11 08:23:37,065 - __main__ - INFO - Searching PRNewswire for 'data security breach'
+2025-07-11 08:23:37,394 - __main__ - INFO - Searching BusinessWire for 'web application breach'
+2025-07-11 08:23:37,715 - __main__ - ERROR - Error searching BusinessWire for 'web application breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+breach
+2025-07-11 08:23:37,715 - __main__ - INFO - Searching BusinessWire for 'web application security'
+2025-07-11 08:23:37,756 - __main__ - ERROR - Error searching BusinessWire for 'web application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+security
+2025-07-11 08:23:37,757 - __main__ - INFO - Searching BusinessWire for 'data breach'
+2025-07-11 08:23:37,824 - __main__ - ERROR - Error searching BusinessWire for 'data breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+breach
+2025-07-11 08:23:37,824 - __main__ - INFO - Searching BusinessWire for 'cyber attack'
+2025-07-11 08:23:37,870 - __main__ - ERROR - Error searching BusinessWire for 'cyber attack': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+attack
+2025-07-11 08:23:37,871 - __main__ - INFO - Searching BusinessWire for 'security breach'
+2025-07-11 08:23:37,923 - __main__ - ERROR - Error searching BusinessWire for 'security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+breach
+2025-07-11 08:23:37,923 - __main__ - INFO - Searching BusinessWire for 'vulnerability disclosure'
+2025-07-11 08:23:37,972 - __main__ - ERROR - Error searching BusinessWire for 'vulnerability disclosure': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=vulnerability+disclosure
+2025-07-11 08:23:37,973 - __main__ - INFO - Searching BusinessWire for 'web security incident'
+2025-07-11 08:23:38,010 - __main__ - ERROR - Error searching BusinessWire for 'web security incident': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+security+incident
+2025-07-11 08:23:38,010 - __main__ - INFO - Searching BusinessWire for 'application security'
+2025-07-11 08:23:38,038 - __main__ - ERROR - Error searching BusinessWire for 'application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=application+security
+2025-07-11 08:23:38,038 - __main__ - INFO - Searching BusinessWire for 'cyber security breach'
+2025-07-11 08:23:38,068 - __main__ - ERROR - Error searching BusinessWire for 'cyber security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+security+breach
+2025-07-11 08:23:38,069 - __main__ - INFO - Searching BusinessWire for 'web application vulnerability'
+2025-07-11 08:23:38,111 - __main__ - ERROR - Error searching BusinessWire for 'web application vulnerability': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+vulnerability
+2025-07-11 08:23:38,111 - __main__ - INFO - Searching BusinessWire for 'security incident response'
+2025-07-11 08:23:38,155 - __main__ - ERROR - Error searching BusinessWire for 'security incident response': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+incident+response
+2025-07-11 08:23:38,156 - __main__ - INFO - Searching BusinessWire for 'data security breach'
+2025-07-11 08:23:38,198 - __main__ - ERROR - Error searching BusinessWire for 'data security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+security+breach
+2025-07-11 08:23:38,198 - __main__ - INFO - Searching PRWeb for 'web application breach'
+2025-07-11 08:23:38,590 - __main__ - INFO - Searching PRWeb for 'web application security'
+2025-07-11 08:23:38,913 - __main__ - INFO - Searching PRWeb for 'data breach'
+2025-07-11 08:23:39,239 - __main__ - INFO - Searching PRWeb for 'cyber attack'
+2025-07-11 08:23:39,649 - __main__ - INFO - Searching PRWeb for 'security breach'
+2025-07-11 08:23:40,021 - __main__ - INFO - Searching PRWeb for 'vulnerability disclosure'
+2025-07-11 08:23:40,371 - __main__ - INFO - Searching PRWeb for 'web security incident'
+2025-07-11 08:23:40,683 - __main__ - INFO - Searching PRWeb for 'application security'
+2025-07-11 08:23:41,207 - __main__ - INFO - Searching PRWeb for 'cyber security breach'
+2025-07-11 08:23:41,475 - __main__ - INFO - Searching PRWeb for 'web application vulnerability'
+2025-07-11 08:23:41,805 - __main__ - INFO - Searching PRWeb for 'security incident response'
+2025-07-11 08:23:42,169 - __main__ - INFO - Searching PRWeb for 'data security breach'
+2025-07-11 08:23:51,357 - __main__ - INFO - No new articles found, running fallback search
+2025-07-11 08:23:51,357 - __main__ - INFO - Running fallback search
+2025-07-11 08:23:53,178 - __main__ - ERROR - Error searching BusinessWire for 'web application breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+breach
+2025-07-11 08:23:53,226 - __main__ - ERROR - Error searching BusinessWire for 'web application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+security
+2025-07-11 08:23:53,275 - __main__ - ERROR - Error searching BusinessWire for 'data breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+breach
+2025-07-11 08:23:53,322 - __main__ - ERROR - Error searching BusinessWire for 'cyber attack': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+attack
+2025-07-11 08:23:53,367 - __main__ - ERROR - Error searching BusinessWire for 'security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+breach
+2025-07-11 08:23:53,409 - __main__ - ERROR - Error searching BusinessWire for 'vulnerability disclosure': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=vulnerability+disclosure
+2025-07-11 08:23:53,438 - __main__ - ERROR - Error searching BusinessWire for 'web security incident': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+security+incident
+2025-07-11 08:23:53,474 - __main__ - ERROR - Error searching BusinessWire for 'application security': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=application+security
+2025-07-11 08:23:53,534 - __main__ - ERROR - Error searching BusinessWire for 'cyber security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=cyber+security+breach
+2025-07-11 08:23:53,567 - __main__ - ERROR - Error searching BusinessWire for 'web application vulnerability': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=web+application+vulnerability
+2025-07-11 08:23:53,619 - __main__ - ERROR - Error searching BusinessWire for 'security incident response': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=security+incident+response
+2025-07-11 08:23:53,660 - __main__ - ERROR - Error searching BusinessWire for 'data security breach': 403 Client Error: Forbidden for url: https://www.businesswire.com/portal/site/home/search/?searchType=news&q=data+security+breach
+2025-07-11 08:24:46,095 - __main__ - ERROR - Error extracting content from https://www.prweb.com/releases/business-technology-latest-news/high-tech-security-list/: Message: timeout: Timed out receiving message from renderer: -0.007
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7943c6f75+76917]
+	GetHandleVerifier [0x0x7ff7943c6fd0+77008]
+	(No symbol) [0x0x7ff794179dea]
+	(No symbol) [0x0x7ff7941675cc]
+	(No symbol) [0x0x7ff7941672ba]
+	(No symbol) [0x0x7ff794164e8b]
+	(No symbol) [0x0x7ff7941658ef]
+	(No symbol) [0x0x7ff79417464e]
+	(No symbol) [0x0x7ff79418a621]
+	(No symbol) [0x0x7ff79419178a]
+	(No symbol) [0x0x7ff79416608d]
+	(No symbol) [0x0x7ff79418a355]
+	(No symbol) [0x0x7ff794220535]
+	(No symbol) [0x0x7ff7941f8243]
+	(No symbol) [0x0x7ff7941c1431]
+	(No symbol) [0x0x7ff7941c21c3]
+	GetHandleVerifier [0x0x7ff79469d2ad+3051437]
+	GetHandleVerifier [0x0x7ff794697903+3028483]
+	GetHandleVerifier [0x0x7ff7946b589d+3151261]
+	GetHandleVerifier [0x0x7ff7943e183e+185662]
+	GetHandleVerifier [0x0x7ff7943e96ff+218111]
+	GetHandleVerifier [0x0x7ff7943cfaf4+112628]
+	GetHandleVerifier [0x0x7ff7943cfca9+113065]
+	GetHandleVerifier [0x0x7ff7943b6c78+10616]
+	BaseThreadInitThunk [0x0x7ffd3eb0e8d7+23]
+	RtlUserThreadStart [0x0x7ffd3f67c34c+44]
+
+2025-07-11 08:28:51,630 - root - CRITICAL - Scraper failed to initialize or run. Aborting. Error: 'SecurityNewsScraper' object has no attribute 'max_workers'
+Traceback (most recent call last):
+  File "C:\Users\jezar\PycharmProjects\security-breach-scraper\news_scraper.py", line 323, in <module>
+    scraper = SecurityNewsScraper(max_workers=10)
+  File "C:\Users\jezar\PycharmProjects\security-breach-scraper\news_scraper.py", line 108, in __init__
+    self.session = self._create_requests_session()
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jezar\PycharmProjects\security-breach-scraper\news_scraper.py", line 116, in _create_requests_session
+    pool_connections=self.max_workers,
+                     ^^^^^^^^^^^^^^^^
+AttributeError: 'SecurityNewsScraper' object has no attribute 'max_workers'

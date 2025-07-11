@@ -1,0 +1,4 @@
+# Environment variables for the security breach news scraper
+# Replace the placeholder URL with your actual Microsoft Teams webhook URL
+
+TEAMS_WEBHOOK_URL=https://infiltrateiq.webhook.office.com/webhookb2/aba165b2-dcfd-415a-b002-f7583de6fb8d@7c6b3fd6-1b67-49ae-9c87-2330431b3663/IncomingWebhook/40f75955dc6d44d6bb1adac2758c0d4d/2ed22f71-338d-4f83-96cd-0b046cb52de3/V2wh7G7JZ_iBC6HR0FCyaW3gt5FqNxYTQbDRy-G65P0881
