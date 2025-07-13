@@ -19,7 +19,7 @@ import {
   Download as DownloadIcon,
   Edit as EditIcon,
   Share as ShareIcon 
-} from '@mui/material/icons';
+} from '@mui/icons-material';
 import { httpsCallable } from 'firebase/functions';
 import { functions } from '../config/firebase';
 
