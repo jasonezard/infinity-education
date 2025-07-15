@@ -1,0 +1,59 @@
+rules_version = '2';
+
+// Craft rules based on data in your Firestore database
+// allow write: if firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.isAdmin == true;
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Helper function to check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+        firestore.exists(/databases/(default)/documents/users/$(request.auth.uid)) &&
+        firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.role == 'ADMIN';
+    }
+    
+    // Helper function to check if user is teacher of a class
+    function isTeacherOfClass(classId) {
+      return request.auth != null &&
+        firestore.exists(/databases/(default)/documents/classes/$(classId)) &&
+        firestore.get(/databases/(default)/documents/classes/$(classId)).data.teacherId == request.auth.uid;
+    }
+    
+    // Anecdotal record attachments
+    match /anecdotal_records/{recordId}/{fileName} {
+      // Allow upload for authenticated users (will be validated by Firestore rules)
+      allow write: if isAuthenticated() && 
+        request.resource.size < 10 * 1024 * 1024 && // 10MB limit
+        request.resource.contentType.matches('image/.*|application/pdf|text/.*');
+      
+      // Allow read for users who can access the record
+      allow read: if isAuthenticated();
+    }
+    
+    // User profile images
+    match /user_profiles/{userId}/{fileName} {
+      // Users can upload their own profile images
+      allow write: if isAuthenticated() && 
+        request.auth.uid == userId &&
+        request.resource.size < 5 * 1024 * 1024 && // 5MB limit
+        request.resource.contentType.matches('image/.*');
+      
+      // Profile images are publicly readable
+      allow read: if true;
+    }
+    
+    // Admin uploads
+    match /admin/{fileName} {
+      // Only admins can upload to admin folder
+      allow write: if isAdmin() &&
+        request.resource.size < 50 * 1024 * 1024; // 50MB limit
+      
+      // Admins can read admin files
+      allow read: if isAdmin();
+    }
+  }
+}

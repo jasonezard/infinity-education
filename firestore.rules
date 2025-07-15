@@ -1,47 +1,111 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Users collection - users can read their own document, admins can read all
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN';
+    }
+    
+    // Helper function to check if user is teacher of a class
+    function isTeacherOfClass(classId) {
+      return request.auth != null &&
+        exists(/databases/$(database)/documents/classes/$(classId)) &&
+        get(/databases/$(database)/documents/classes/$(classId)).data.teacherId == request.auth.uid;
+    }
+    
+    // Helper function to validate user data
+    function validUserData() {
+      return request.resource.data.keys().hasAll(['name', 'email', 'role']) &&
+        request.resource.data.role in ['ADMIN', 'TEACHER'] &&
+        request.resource.data.email is string &&
+        request.resource.data.name is string;
+    }
+    
+    // Helper function to validate class data
+    function validClassData() {
+      return request.resource.data.keys().hasAll(['name', 'teacherId']) &&
+        request.resource.data.name is string &&
+        request.resource.data.teacherId is string;
+    }
+    
+    // Helper function to validate student data
+    function validStudentData() {
+      return request.resource.data.keys().hasAll(['fullName', 'classId']) &&
+        request.resource.data.fullName is string &&
+        request.resource.data.classId is string;
+    }
+    
+    // Helper function to validate anecdotal record data
+    function validRecordData() {
+      return request.resource.data.keys().hasAll(['studentId', 'authorId', 'note', 'valueTag', 'assessmentType', 'isFlaggedForReport']) &&
+        request.resource.data.assessmentType in ['FORMATIVE', 'SUMMATIVE'] &&
+        request.resource.data.isFlaggedForReport is bool &&
+        request.resource.data.note is string &&
+        request.resource.data.valueTag is string &&
+        request.resource.data.authorId == request.auth.uid;
+    }
+
+    // Users collection
     match /users/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-      allow read: if request.auth != null && 
-        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
-        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN';
+      // Users can read/write their own document
+      allow read, write: if request.auth != null && request.auth.uid == userId && validUserData();
+      // Admins can read all users
+      allow read: if isAdmin();
+      // Only allow creating user document for authenticated user
+      allow create: if request.auth != null && request.auth.uid == userId && validUserData();
     }
     
-    // Classes collection - teachers can read their own classes, admins can read/write all
+    // Classes collection
     match /classes/{classId} {
+      // Teachers can read their own classes, admins can read all
       allow read: if request.auth != null && (
-        resource.data.teacherId == request.auth.uid ||
-        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
-         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN')
+        resource.data.teacherId == request.auth.uid || isAdmin()
       );
-      allow write: if request.auth != null &&
-        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
-        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN';
+      // Only admins can create/update/delete classes
+      allow create, update: if isAdmin() && validClassData();
+      allow delete: if isAdmin();
     }
     
-    // Students collection - teachers can access students in their classes, admins can access all
+    // Students collection
     match /students/{studentId} {
-      allow read, write: if request.auth != null && (
-        exists(/databases/$(database)/documents/classes/$(resource.data.classId)) &&
-        get(/databases/$(database)/documents/classes/$(resource.data.classId)).data.teacherId == request.auth.uid ||
-        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
-         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN')
+      // Teachers can access students in their classes, admins can access all
+      allow read: if request.auth != null && (
+        isTeacherOfClass(resource.data.classId) || isAdmin()
+      );
+      allow create, update: if request.auth != null && validStudentData() && (
+        isTeacherOfClass(request.resource.data.classId) || isAdmin()
+      );
+      allow delete: if request.auth != null && (
+        isTeacherOfClass(resource.data.classId) || isAdmin()
       );
     }
     
-    // Anecdotal records - teachers can access records for their students
+    // Anecdotal records collection
     match /anecdotal_records/{recordId} {
-      allow read, write: if request.auth != null && (
+      // Authors can read their own records, teachers can read records for their students, admins can read all
+      allow read: if request.auth != null && (
         resource.data.authorId == request.auth.uid ||
         (exists(/databases/$(database)/documents/students/$(resource.data.studentId)) &&
-         exists(/databases/$(database)/documents/classes/$(get(/databases/$(database)/documents/students/$(resource.data.studentId)).data.classId)) &&
-         get(/databases/$(database)/documents/classes/$(get(/databases/$(database)/documents/students/$(resource.data.studentId)).data.classId)).data.teacherId == request.auth.uid) ||
-        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
-         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN')
+         isTeacherOfClass(get(/databases/$(database)/documents/students/$(resource.data.studentId)).data.classId)) ||
+        isAdmin()
       );
-      allow create: if request.auth != null && request.resource.data.authorId == request.auth.uid;
+      
+      // Only authenticated users can create records for students in their classes
+      allow create: if request.auth != null && validRecordData() &&
+        exists(/databases/$(database)/documents/students/$(request.resource.data.studentId)) &&
+        isTeacherOfClass(get(/databases/$(database)/documents/students/$(request.resource.data.studentId)).data.classId);
+      
+      // Authors can update their own records, admins can update all
+      allow update: if request.auth != null && validRecordData() && (
+        resource.data.authorId == request.auth.uid || isAdmin()
+      );
+      
+      // Authors can delete their own records, admins can delete all
+      allow delete: if request.auth != null && (
+        resource.data.authorId == request.auth.uid || isAdmin()
+      );
     }
   }
 }
