@@ -6,8 +6,10 @@ import {
   Typography,
   Paper,
   Alert,
-  CircularProgress
+  CircularProgress,
+  Divider
 } from '@mui/material';
+import { Google as GoogleIcon } from '@mui/icons-material';
 import { useAuth } from '../contexts/AuthContext';
 
 const Login: React.FC = () => {
@@ -15,7 +17,8 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const { login } = useAuth();
+  const [googleLoading, setGoogleLoading] = useState(false);
+  const { login, loginWithGoogle } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,6 +31,25 @@ const Login: React.FC = () => {
       setError('Failed to log in. Please check your credentials.');
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    try {
+      setError('');
+      setGoogleLoading(true);
+      await loginWithGoogle();
+    } catch (error: any) {
+      console.error('Google sign-in error:', error);
+      if (error.code === 'auth/popup-closed-by-user') {
+        setError('Sign-in was cancelled. Please try again.');
+      } else if (error.code === 'auth/popup-blocked') {
+        setError('Pop-up was blocked. Please allow pop-ups and try again.');
+      } else {
+        setError('Failed to sign in with Google. Please try again.');
+      }
+    } finally {
+      setGoogleLoading(false);
     }
   };
 
@@ -45,6 +67,32 @@ const Login: React.FC = () => {
         </Typography>
         
         {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
+        
+        {/* Google Sign-In Button */}
+        <Button
+          fullWidth
+          variant="outlined"
+          startIcon={googleLoading ? <CircularProgress size={20} /> : <GoogleIcon />}
+          onClick={handleGoogleSignIn}
+          disabled={googleLoading || loading}
+          sx={{ 
+            mb: 3,
+            borderColor: '#4285f4',
+            color: '#4285f4',
+            '&:hover': {
+              borderColor: '#357ae8',
+              backgroundColor: 'rgba(66, 133, 244, 0.04)'
+            }
+          }}
+        >
+          {googleLoading ? 'Signing in...' : 'Continue with Google'}
+        </Button>
+
+        <Divider sx={{ my: 3 }}>
+          <Typography variant="body2" color="text.secondary">
+            OR
+          </Typography>
+        </Divider>
         
         <form onSubmit={handleSubmit}>
           <TextField
@@ -72,9 +120,9 @@ const Login: React.FC = () => {
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2 }}
-            disabled={loading}
+            disabled={loading || googleLoading}
           >
-            {loading ? <CircularProgress size={24} /> : 'Log In'}
+            {loading ? <CircularProgress size={24} /> : 'Log In with Email'}
           </Button>
         </form>
       </Paper>
