@@ -1,0 +1,13 @@
+{
+  "name": "infinity-education-scripts",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "Database management scripts for Infinity Education",
+  "scripts": {
+    "populate": "node populate-test-data.js",
+    "clear": "node clear-database.js"
+  },
+  "dependencies": {
+    "firebase": "^11.10.0"
+  }
+}

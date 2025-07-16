@@ -1,0 +1,45 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+  
+  <!-- Teacher figure -->
+  <!-- Head -->
+  <circle cx="50" cy="30" r="12" fill="#FDBCB4"/>
+  
+  <!-- Hair -->
+  <path d="M 38 25 Q 50 15 62 25 Q 62 30 50 28 Q 38 30 38 25" fill="#8B4513"/>
+  
+  <!-- Body -->
+  <rect x="42" y="42" width="16" height="25" fill="#4169E1"/>
+  
+  <!-- Arms -->
+  <rect x="35" y="45" width="7" height="15" fill="#FDBCB4"/>
+  <rect x="58" y="45" width="7" height="15" fill="#FDBCB4"/>
+  
+  <!-- Legs -->
+  <rect x="44" y="67" width="5" height="15" fill="#000"/>
+  <rect x="51" y="67" width="5" height="15" fill="#000"/>
+  
+  <!-- Shoes -->
+  <ellipse cx="46.5" cy="83" rx="3" ry="2" fill="#000"/>
+  <ellipse cx="53.5" cy="83" rx="3" ry="2" fill="#000"/>
+  
+  <!-- Blackboard -->
+  <rect x="68" y="35" width="25" height="18" fill="#2E7D32" stroke="#000" stroke-width="1"/>
+  <rect x="70" y="37" width="21" height="14" fill="#000"/>
+  
+  <!-- Math equation on board -->
+  <text x="75" y="45" font-family="Arial" font-size="6" fill="#FFF">2+2=4</text>
+  
+  <!-- Pointer -->
+  <line x1="58" y1="50" x2="68" y2="45" stroke="#8B4513" stroke-width="2"/>
+  
+  <!-- Apple on desk -->
+  <circle cx="75" cy="60" r="4" fill="#FF0000"/>
+  <ellipse cx="75" cy="57" rx="1" ry="2" fill="#228B22"/>
+  
+  <!-- Books -->
+  <rect x="82" y="58" width="3" height="6" fill="#FF4500"/>
+  <rect x="85" y="58" width="3" height="6" fill="#32CD32"/>
+  <rect x="88" y="58" width="3" height="6" fill="#4169E1"/>
+</svg>

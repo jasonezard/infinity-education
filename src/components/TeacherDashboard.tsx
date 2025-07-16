@@ -12,6 +12,12 @@ import {
   Chip,
   Divider
 } from '@mui/material';
+import { 
+  School as SchoolIcon,
+  Group as GroupIcon,
+  BarChart as BarChartIcon,
+  Assessment as AssessmentIcon
+} from '@mui/icons-material';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { useAuth } from '../contexts/AuthContext';
 import { firestoreService } from '../services/firestore';
@@ -102,18 +108,76 @@ const TeacherDashboard: React.FC = () => {
 
   return (
     <Box p={3}>
-      <Typography variant="h4" gutterBottom>
-        {myClass.name} - Teacher Dashboard
-      </Typography>
+      {/* Header Section */}
+      <Box 
+        sx={{ 
+          mb: 4,
+          p: 3,
+          borderRadius: 3,
+          background: 'linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%)',
+          border: '1px solid rgba(255, 107, 53, 0.1)'
+        }}
+      >
+        <Box display="flex" alignItems="center" mb={2}>
+          <img 
+            src="/images/teacher-icon.svg" 
+            alt="Teacher Dashboard" 
+            style={{ width: 60, height: 60, marginRight: 16 }}
+          />
+          <Box>
+            <Typography variant="h3" sx={{ fontWeight: 700, color: 'secondary.main' }}>
+              {myClass.name}
+            </Typography>
+            <Typography variant="h5" color="text.secondary">
+              Teacher Dashboard
+            </Typography>
+          </Box>
+        </Box>
+
+        {/* Quick Stats */}
+        <Grid container spacing={2} sx={{ mt: 2 }}>
+          <Grid item xs={12} sm={6}>
+            <Box display="flex" alignItems="center" sx={{ 
+              p: 2, 
+              bgcolor: 'white', 
+              borderRadius: 2, 
+              boxShadow: 1 
+            }}>
+              <GroupIcon sx={{ color: 'secondary.main', mr: 2, fontSize: 32 }} />
+              <Box>
+                <Typography variant="h6">{students.length}</Typography>
+                <Typography variant="body2" color="text.secondary">Students</Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Box display="flex" alignItems="center" sx={{ 
+              p: 2, 
+              bgcolor: 'white', 
+              borderRadius: 2, 
+              boxShadow: 1 
+            }}>
+              <AssessmentIcon sx={{ color: 'info.main', mr: 2, fontSize: 32 }} />
+              <Box>
+                <Typography variant="h6">{allRecords.length}</Typography>
+                <Typography variant="body2" color="text.secondary">Total Records</Typography>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
 
       <Grid container spacing={3}>
         {/* Class Evidence Chart */}
         <Grid item xs={12} lg={8}>
-          <Card>
+          <Card sx={{ borderRadius: 3 }}>
             <CardContent>
-              <Typography variant="h6" gutterBottom>
-                Evidence Volume by Skill
-              </Typography>
+              <Box display="flex" alignItems="center" mb={2}>
+                <BarChartIcon sx={{ color: 'info.main', mr: 2, fontSize: 24 }} />
+                <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                  Evidence Volume by Skill
+                </Typography>
+              </Box>
               {valueTagData.length > 0 ? (
                 <Box sx={{ width: '100%', height: 400 }}>
                   <BarChart

@@ -59,12 +59,57 @@ const Login: React.FC = () => {
       justifyContent="center"
       alignItems="center"
       minHeight="100vh"
-      bgcolor="#f5f5f5"
+      sx={{
+        background: 'linear-gradient(135deg, #E8F5E8 0%, #F8F9FA 50%, #FFF3E0 100%)',
+        backgroundImage: `url('/images/education-hero.svg')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        position: 'relative',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'rgba(255, 255, 255, 0.85)',
+          zIndex: 1,
+        }
+      }}
     >
-      <Paper elevation={3} sx={{ p: 4, maxWidth: 400, width: '100%' }}>
-        <Typography variant="h4" component="h1" textAlign="center" mb={3}>
-          Infinity Education
-        </Typography>
+      <Paper 
+        elevation={6} 
+        sx={{ 
+          p: 4, 
+          maxWidth: 450, 
+          width: '100%', 
+          zIndex: 2,
+          position: 'relative',
+          borderRadius: 3,
+          background: 'rgba(255, 255, 255, 0.95)',
+          backdropFilter: 'blur(10px)',
+        }}
+      >
+        <Box sx={{ textAlign: 'center', mb: 3 }}>
+          <img 
+            src="/images/learning-icon.svg" 
+            alt="Infinity Education" 
+            style={{ width: 80, height: 80, marginBottom: 16 }}
+          />
+          <Typography variant="h4" component="h1" sx={{ 
+            fontWeight: 700,
+            background: 'linear-gradient(45deg, #2E7D32 30%, #66BB6A 90%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text'
+          }}>
+            Infinity Education
+          </Typography>
+          <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 1 }}>
+            Empowering Learning Through Technology
+          </Typography>
+        </Box>
         
         {error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
         
@@ -77,12 +122,18 @@ const Login: React.FC = () => {
           disabled={googleLoading || loading}
           sx={{ 
             mb: 3,
+            py: 1.5,
+            borderRadius: 2,
             borderColor: '#4285f4',
             color: '#4285f4',
+            fontWeight: 500,
             '&:hover': {
               borderColor: '#357ae8',
-              backgroundColor: 'rgba(66, 133, 244, 0.04)'
-            }
+              backgroundColor: 'rgba(66, 133, 244, 0.04)',
+              transform: 'translateY(-1px)',
+              boxShadow: '0 4px 12px rgba(66, 133, 244, 0.2)'
+            },
+            transition: 'all 0.3s ease'
           }}
         >
           {googleLoading ? 'Signing in...' : 'Continue with Google'}
@@ -119,7 +170,20 @@ const Login: React.FC = () => {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2 }}
+            sx={{ 
+              mt: 3, 
+              mb: 2,
+              py: 1.5,
+              borderRadius: 2,
+              fontWeight: 500,
+              background: 'linear-gradient(45deg, #2E7D32 30%, #66BB6A 90%)',
+              '&:hover': {
+                background: 'linear-gradient(45deg, #1B5E20 30%, #4CAF50 90%)',
+                transform: 'translateY(-1px)',
+                boxShadow: '0 4px 12px rgba(46, 125, 50, 0.3)'
+              },
+              transition: 'all 0.3s ease'
+            }}
             disabled={loading || googleLoading}
           >
             {loading ? <CircularProgress size={24} /> : 'Log In with Email'}

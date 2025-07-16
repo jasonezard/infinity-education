@@ -8,13 +8,16 @@ import {
   Container,
   IconButton,
   Menu,
-  MenuItem
+  MenuItem,
+  Avatar
 } from '@mui/material';
 import { 
   AccountCircle,
   Dashboard as DashboardIcon,
   Add as AddIcon,
-  People as PeopleIcon 
+  People as PeopleIcon,
+  School as SchoolIcon,
+  MenuBook as MenuBookIcon
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -45,9 +48,19 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Infinity Education
-          </Typography>
+          <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
+            <SchoolIcon sx={{ mr: 1, fontSize: 28 }} />
+            <Typography variant="h5" component="div" sx={{ 
+              fontWeight: 700,
+              background: 'linear-gradient(45deg, #FFF 30%, #E8F5E8 90%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text'
+            }}>
+              Infinity Education
+            </Typography>
+          </Box>
+          <Box sx={{ flexGrow: 1 }} />
           
           {userProfile && (
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -59,7 +72,11 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   onClick={() => navigate('/admin')}
                   sx={{ 
                     mr: 1,
-                    bgcolor: isActive('/admin') ? 'rgba(255,255,255,0.1)' : 'transparent'
+                    borderRadius: 2,
+                    bgcolor: isActive('/admin') ? 'rgba(255,255,255,0.15)' : 'transparent',
+                    '&:hover': {
+                      bgcolor: 'rgba(255,255,255,0.1)',
+                    }
                   }}
                 >
                   Admin Dashboard
@@ -74,18 +91,26 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     onClick={() => navigate('/teacher')}
                     sx={{ 
                       mr: 1,
-                      bgcolor: isActive('/teacher') ? 'rgba(255,255,255,0.1)' : 'transparent'
+                      borderRadius: 2,
+                      bgcolor: isActive('/teacher') ? 'rgba(255,255,255,0.15)' : 'transparent',
+                      '&:hover': {
+                        bgcolor: 'rgba(255,255,255,0.1)',
+                      }
                     }}
                   >
                     Dashboard
                   </Button>
                   <Button
                     color="inherit"
-                    startIcon={<AddIcon />}
+                    startIcon={<MenuBookIcon />}
                     onClick={() => navigate('/add-record')}
                     sx={{ 
                       mr: 1,
-                      bgcolor: isActive('/add-record') ? 'rgba(255,255,255,0.1)' : 'transparent'
+                      borderRadius: 2,
+                      bgcolor: isActive('/add-record') ? 'rgba(255,255,255,0.15)' : 'transparent',
+                      '&:hover': {
+                        bgcolor: 'rgba(255,255,255,0.1)',
+                      }
                     }}
                   >
                     Add Record
@@ -102,8 +127,24 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   aria-haspopup="true"
                   onClick={handleMenu}
                   color="inherit"
+                  sx={{
+                    borderRadius: 2,
+                    '&:hover': {
+                      bgcolor: 'rgba(255,255,255,0.1)',
+                    }
+                  }}
                 >
-                  <AccountCircle />
+                  <Avatar 
+                    sx={{ 
+                      width: 32, 
+                      height: 32, 
+                      bgcolor: 'rgba(255,255,255,0.2)',
+                      color: 'inherit',
+                      fontSize: 16
+                    }}
+                  >
+                    {userProfile?.name?.charAt(0).toUpperCase() || 'U'}
+                  </Avatar>
                 </IconButton>
                 <Menu
                   id="menu-appbar"

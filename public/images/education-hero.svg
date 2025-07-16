@@ -1,0 +1,96 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- Sky -->
+  <rect width="600" height="200" fill="#87CEEB"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="60" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="450" cy="80" rx="25" ry="12" fill="white" opacity="0.8"/>
+  
+  <!-- School building -->
+  <rect x="200" y="150" width="200" height="120" fill="#E6E6FA"/>
+  <polygon points="200,150 300,100 400,150" fill="#8B4513"/>
+  
+  <!-- School door -->
+  <rect x="280" y="220" width="40" height="50" fill="#654321"/>
+  <circle cx="315" cy="245" r="2" fill="#FFD700"/>
+  
+  <!-- Windows -->
+  <rect x="220" y="170" width="25" height="25" fill="#87CEEB"/>
+  <rect x="355" y="170" width="25" height="25" fill="#87CEEB"/>
+  <line x1="232.5" y1="170" x2="232.5" y2="195" stroke="#FFF" stroke-width="2"/>
+  <line x1="220" y1="182.5" x2="245" y2="182.5" stroke="#FFF" stroke-width="2"/>
+  <line x1="367.5" y1="170" x2="367.5" y2="195" stroke="#FFF" stroke-width="2"/>
+  <line x1="355" y1="182.5" x2="380" y2="182.5" stroke="#FFF" stroke-width="2"/>
+  
+  <!-- Flag pole -->
+  <line x1="420" y1="100" x2="420" y2="150" stroke="#8B4513" stroke-width="3"/>
+  <rect x="420" y="105" width="30" height="20" fill="#FF0000"/>
+  <rect x="420" y="115" width="30" height="10" fill="#FFFFFF"/>
+  
+  <!-- Trees -->
+  <ellipse cx="100" cy="200" rx="40" ry="50" fill="#228B22"/>
+  <rect x="95" y="230" width="10" height="40" fill="#8B4513"/>
+  
+  <ellipse cx="500" cy="190" rx="35" ry="45" fill="#228B22"/>
+  <rect x="495" y="215" width="10" height="55" fill="#8B4513"/>
+  
+  <!-- Students -->
+  <!-- Student 1 -->
+  <circle cx="150" cy="290" r="8" fill="#FDBCB4"/>
+  <rect x="145" y="298" width="10" height="15" fill="#4169E1"/>
+  <rect x="145" y="313" width="10" height="10" fill="#32CD32"/>
+  <line x1="145" y1="305" x2="140" y2="315" stroke="#FDBCB4" stroke-width="2"/>
+  <line x1="155" y1="305" x2="160" y2="315" stroke="#FDBCB4" stroke-width="2"/>
+  <line x1="145" y1="323" x2="140" y2="335" stroke="#000" stroke-width="2"/>
+  <line x1="155" y1="323" x2="160" y2="335" stroke="#000" stroke-width="2"/>
+  
+  <!-- Student 2 -->
+  <circle cx="450" cy="285" r="8" fill="#FDBCB4"/>
+  <rect x="445" y="293" width="10" height="15" fill="#FF69B4"/>
+  <rect x="445" y="308" width="10" height="10" fill="#9370DB"/>
+  <line x1="445" y1="300" x2="440" y2="310" stroke="#FDBCB4" stroke-width="2"/>
+  <line x1="455" y1="300" x2="460" y2="310" stroke="#FDBCB4" stroke-width="2"/>
+  <line x1="445" y1="318" x2="440" y2="330" stroke="#000" stroke-width="2"/>
+  <line x1="455" y1="318" x2="460" y2="330" stroke="#000" stroke-width="2"/>
+  
+  <!-- Playground equipment -->
+  <!-- Swing -->
+  <line x1="80" y1="180" x2="80" y2="270" stroke="#8B4513" stroke-width="4"/>
+  <line x1="120" y1="180" x2="120" y2="270" stroke="#8B4513" stroke-width="4"/>
+  <line x1="80" y1="180" x2="120" y2="180" stroke="#8B4513" stroke-width="4"/>
+  <line x1="90" y1="180" x2="90" y2="250" stroke="#000" stroke-width="2"/>
+  <line x1="110" y1="180" x2="110" y2="250" stroke="#000" stroke-width="2"/>
+  <rect x="85" y="250" width="10" height="5" fill="#8B4513"/>
+  <rect x="105" y="250" width="10" height="5" fill="#8B4513"/>
+  
+  <!-- Books floating -->
+  <g transform="rotate(15 50 120)">
+    <rect x="45" y="115" width="10" height="12" fill="#FF4500"/>
+    <line x1="45" y1="118" x2="55" y2="118" stroke="#FFF" stroke-width="0.5"/>
+  </g>
+  
+  <g transform="rotate(-10 520 130)">
+    <rect x="515" y="125" width="10" height="12" fill="#32CD32"/>
+    <line x1="515" y1="128" x2="525" y2="128" stroke="#FFF" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="550" cy="50" r="25" fill="#FFD700"/>
+  <line x1="550" y1="15" x2="550" y2="25" stroke="#FFD700" stroke-width="3"/>
+  <line x1="575" y1="25" x2="570" y2="30" stroke="#FFD700" stroke-width="3"/>
+  <line x1="585" y1="50" x2="575" y2="50" stroke="#FFD700" stroke-width="3"/>
+  <line x1="575" y1="75" x2="570" y2="70" stroke="#FFD700" stroke-width="3"/>
+  <line x1="550" y1="85" x2="550" y2="75" stroke="#FFD700" stroke-width="3"/>
+  <line x1="525" y1="75" x2="530" y2="70" stroke="#FFD700" stroke-width="3"/>
+  <line x1="515" y1="50" x2="525" y2="50" stroke="#FFD700" stroke-width="3"/>
+  <line x1="525" y1="25" x2="530" y2="30" stroke="#FFD700" stroke-width="3"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="270" width="600" height="130" fill="#90EE90"/>
+  
+  <!-- Path -->
+  <path d="M 150 270 Q 300 280 450 270" stroke="#D2B48C" stroke-width="15" fill="none"/>
+</svg>

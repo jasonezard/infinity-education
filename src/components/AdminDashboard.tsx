@@ -25,7 +25,15 @@ import {
   IconButton,
   Fab
 } from '@mui/material';
-import { Add as AddIcon, Edit as EditIcon, Delete as DeleteIcon } from '@mui/icons-material';
+import { 
+  Add as AddIcon, 
+  Edit as EditIcon, 
+  Delete as DeleteIcon,
+  School as SchoolIcon,
+  Group as GroupIcon,
+  Person as PersonIcon,
+  BarChart as BarChartIcon
+} from '@mui/icons-material';
 import { firestoreService } from '../services/firestore';
 import { Class, User, Student, ClassWithDetails } from '../types';
 import { collection, getDocs } from 'firebase/firestore';
@@ -174,19 +182,99 @@ const AdminDashboard: React.FC = () => {
 
   return (
     <Box p={3}>
-      <Typography variant="h4" gutterBottom>
-        Admin Dashboard
-      </Typography>
+      {/* Header Section with Educational Design */}
+      <Box 
+        sx={{ 
+          mb: 4,
+          p: 3,
+          borderRadius: 3,
+          background: 'linear-gradient(135deg, #E8F5E8 0%, #F1F8E9 100%)',
+          border: '1px solid rgba(46, 125, 50, 0.1)'
+        }}
+      >
+        <Box display="flex" alignItems="center" mb={2}>
+          <img 
+            src="/images/admin-icon.svg" 
+            alt="Admin Dashboard" 
+            style={{ width: 60, height: 60, marginRight: 16 }}
+          />
+          <Box>
+            <Typography variant="h3" sx={{ fontWeight: 700, color: 'primary.main' }}>
+              Admin Dashboard
+            </Typography>
+            <Typography variant="subtitle1" color="text.secondary">
+              Manage your educational institution with comprehensive oversight
+            </Typography>
+          </Box>
+        </Box>
+
+        {/* Quick Stats */}
+        <Grid container spacing={2} sx={{ mt: 2 }}>
+          <Grid item xs={12} sm={4}>
+            <Box display="flex" alignItems="center" sx={{ 
+              p: 2, 
+              bgcolor: 'white', 
+              borderRadius: 2, 
+              boxShadow: 1 
+            }}>
+              <SchoolIcon sx={{ color: 'primary.main', mr: 2, fontSize: 32 }} />
+              <Box>
+                <Typography variant="h6">{classes.length}</Typography>
+                <Typography variant="body2" color="text.secondary">Classes</Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box display="flex" alignItems="center" sx={{ 
+              p: 2, 
+              bgcolor: 'white', 
+              borderRadius: 2, 
+              boxShadow: 1 
+            }}>
+              <GroupIcon sx={{ color: 'secondary.main', mr: 2, fontSize: 32 }} />
+              <Box>
+                <Typography variant="h6">{students.length}</Typography>
+                <Typography variant="body2" color="text.secondary">Students</Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Box display="flex" alignItems="center" sx={{ 
+              p: 2, 
+              bgcolor: 'white', 
+              borderRadius: 2, 
+              boxShadow: 1 
+            }}>
+              <PersonIcon sx={{ color: 'info.main', mr: 2, fontSize: 32 }} />
+              <Box>
+                <Typography variant="h6">{teachers.length}</Typography>
+                <Typography variant="body2" color="text.secondary">Teachers</Typography>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
 
       {/* Classes Overview */}
-      <Card sx={{ mb: 4 }}>
+      <Card sx={{ mb: 4, borderRadius: 3 }}>
         <CardContent>
           <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-            <Typography variant="h5">Classes Overview</Typography>
+            <Box display="flex" alignItems="center">
+              <SchoolIcon sx={{ color: 'primary.main', mr: 2, fontSize: 28 }} />
+              <Typography variant="h5" sx={{ fontWeight: 600 }}>Classes Overview</Typography>
+            </Box>
             <Button
               variant="contained"
               startIcon={<AddIcon />}
               onClick={() => openClassForm()}
+              sx={{
+                borderRadius: 2,
+                px: 3,
+                background: 'linear-gradient(45deg, #2E7D32 30%, #66BB6A 90%)',
+                '&:hover': {
+                  background: 'linear-gradient(45deg, #1B5E20 30%, #4CAF50 90%)',
+                }
+              }}
             >
               Add Class
             </Button>
@@ -195,28 +283,52 @@ const AdminDashboard: React.FC = () => {
           <Grid container spacing={2}>
             {classes.map((classItem) => (
               <Grid item xs={12} md={6} lg={4} key={classItem.id}>
-                <Card variant="outlined">
+                <Card 
+                  variant="outlined" 
+                  sx={{ 
+                    borderRadius: 2,
+                    border: '1px solid rgba(46, 125, 50, 0.2)',
+                    '&:hover': {
+                      boxShadow: '0 4px 20px rgba(46, 125, 50, 0.15)',
+                      transform: 'translateY(-2px)',
+                    },
+                    transition: 'all 0.3s ease'
+                  }}
+                >
                   <CardContent>
-                    <Typography variant="h6">{classItem.name}</Typography>
-                    <Typography color="textSecondary">
-                      Teacher: {classItem.teacherName}
+                    <Box display="flex" alignItems="center" mb={1}>
+                      <img 
+                        src="/images/teacher-icon.svg" 
+                        alt="Class" 
+                        style={{ width: 32, height: 32, marginRight: 8 }}
+                      />
+                      <Typography variant="h6" sx={{ fontWeight: 600 }}>
+                        {classItem.name}
+                      </Typography>
+                    </Box>
+                    <Typography color="textSecondary" sx={{ mb: 1 }}>
+                      👨‍🏫 Teacher: {classItem.teacherName}
                     </Typography>
-                    <Typography color="textSecondary">
-                      Students: {classItem.studentCount}
+                    <Typography color="textSecondary" sx={{ mb: 2 }}>
+                      👥 Students: {classItem.studentCount}
                     </Typography>
-                    <Box mt={2}>
-                      <IconButton
-                        size="small"
-                        onClick={() => openClassForm(classItem)}
-                      >
-                        <EditIcon />
-                      </IconButton>
-                      <IconButton
-                        size="small"
-                        onClick={() => handleDeleteClass(classItem.id)}
-                      >
-                        <DeleteIcon />
-                      </IconButton>
+                    <Box display="flex" justifyContent="space-between" alignItems="center">
+                      <Box>
+                        <IconButton
+                          size="small"
+                          onClick={() => openClassForm(classItem)}
+                          sx={{ color: 'primary.main' }}
+                        >
+                          <EditIcon />
+                        </IconButton>
+                        <IconButton
+                          size="small"
+                          onClick={() => handleDeleteClass(classItem.id)}
+                          sx={{ color: 'error.main' }}
+                        >
+                          <DeleteIcon />
+                        </IconButton>
+                      </Box>
                     </Box>
                   </CardContent>
                 </Card>
@@ -227,26 +339,46 @@ const AdminDashboard: React.FC = () => {
       </Card>
 
       {/* Students Management */}
-      <Card>
+      <Card sx={{ borderRadius: 3 }}>
         <CardContent>
           <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-            <Typography variant="h5">Students</Typography>
+            <Box display="flex" alignItems="center">
+              <GroupIcon sx={{ color: 'secondary.main', mr: 2, fontSize: 28 }} />
+              <Typography variant="h5" sx={{ fontWeight: 600 }}>Students</Typography>
+            </Box>
             <Button
               variant="contained"
               startIcon={<AddIcon />}
               onClick={() => openStudentForm()}
+              sx={{
+                borderRadius: 2,
+                px: 3,
+                background: 'linear-gradient(45deg, #FF6B35 30%, #FF8A65 90%)',
+                '&:hover': {
+                  background: 'linear-gradient(45deg, #E64A19 30%, #FF7043 90%)',
+                }
+              }}
             >
               Add Student
             </Button>
           </Box>
           
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} sx={{ borderRadius: 2, border: '1px solid rgba(0,0,0,0.08)' }}>
             <Table>
               <TableHead>
-                <TableRow>
-                  <TableCell>Name</TableCell>
-                  <TableCell>Class</TableCell>
-                  <TableCell>Actions</TableCell>
+                <TableRow sx={{ bgcolor: '#F8F9FA' }}>
+                  <TableCell sx={{ fontWeight: 600 }}>
+                    <Box display="flex" alignItems="center">
+                      <img 
+                        src="/images/student-icon.svg" 
+                        alt="Student" 
+                        style={{ width: 20, height: 20, marginRight: 8 }}
+                      />
+                      Name
+                    </Box>
+                  </TableCell>
+                  <TableCell sx={{ fontWeight: 600 }}>Class</TableCell>
+                  <TableCell sx={{ fontWeight: 600 }}>Actions</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
