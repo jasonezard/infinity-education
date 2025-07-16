@@ -10,13 +10,17 @@ import {
   ListItemText,
   ListItemButton,
   Chip,
-  Divider
+  Divider,
+  Fab,
+  Button
 } from '@mui/material';
 import { 
   School as SchoolIcon,
   Group as GroupIcon,
   BarChart as BarChartIcon,
-  Assessment as AssessmentIcon
+  Assessment as AssessmentIcon,
+  Add as AddIcon,
+  NoteAdd as NoteAddIcon
 } from '@mui/icons-material';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { useAuth } from '../contexts/AuthContext';
@@ -36,7 +40,6 @@ const TeacherDashboard: React.FC = () => {
   const [students, setStudents] = useState<Student[]>([]);
   const [allRecords, setAllRecords] = useState<AnecdotalRecord[]>([]);
   const [valueTagData, setValueTagData] = useState<ValueTagData[]>([]);
-  const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
 
   useEffect(() => {
     if (userProfile) {
@@ -136,7 +139,7 @@ const TeacherDashboard: React.FC = () => {
 
         {/* Quick Stats */}
         <Grid container spacing={2} sx={{ mt: 2 }}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
             <Box display="flex" alignItems="center" sx={{ 
               p: 2, 
               bgcolor: 'white', 
@@ -150,7 +153,7 @@ const TeacherDashboard: React.FC = () => {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
             <Box display="flex" alignItems="center" sx={{ 
               p: 2, 
               bgcolor: 'white', 
@@ -163,6 +166,28 @@ const TeacherDashboard: React.FC = () => {
                 <Typography variant="body2" color="text.secondary">Total Records</Typography>
               </Box>
             </Box>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Button
+              variant="contained"
+              size="large"
+              startIcon={<NoteAddIcon />}
+              onClick={() => navigate('/add-record')}
+              sx={{
+                width: '100%',
+                height: '100%',
+                borderRadius: 2,
+                background: 'linear-gradient(45deg, #FF6B35 30%, #FF8A65 90%)',
+                '&:hover': {
+                  background: 'linear-gradient(45deg, #E64A19 30%, #FF7043 90%)',
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 4px 12px rgba(255, 107, 53, 0.3)'
+                },
+                transition: 'all 0.3s ease'
+              }}
+            >
+              Add Record
+            </Button>
           </Grid>
         </Grid>
       </Box>
@@ -301,6 +326,27 @@ const TeacherDashboard: React.FC = () => {
           </Grid>
         )}
       </Grid>
+
+      {/* Floating Action Button */}
+      <Fab
+        color="secondary"
+        aria-label="add record"
+        onClick={() => navigate('/add-record')}
+        sx={{
+          position: 'fixed',
+          bottom: 24,
+          right: 24,
+          background: 'linear-gradient(45deg, #FF6B35 30%, #FF8A65 90%)',
+          '&:hover': {
+            background: 'linear-gradient(45deg, #E64A19 30%, #FF7043 90%)',
+            transform: 'scale(1.05)',
+            boxShadow: '0 6px 20px rgba(255, 107, 53, 0.4)'
+          },
+          transition: 'all 0.3s ease'
+        }}
+      >
+        <AddIcon />
+      </Fab>
     </Box>
   );
 };

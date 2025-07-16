@@ -22,8 +22,7 @@ import {
   TableHead,
   TableRow,
   Paper,
-  IconButton,
-  Fab
+  IconButton
 } from '@mui/material';
 import { 
   Add as AddIcon, 
@@ -31,8 +30,7 @@ import {
   Delete as DeleteIcon,
   School as SchoolIcon,
   Group as GroupIcon,
-  Person as PersonIcon,
-  BarChart as BarChartIcon
+  Person as PersonIcon
 } from '@mui/icons-material';
 import { firestoreService } from '../services/firestore';
 import { Class, User, Student, ClassWithDetails } from '../types';

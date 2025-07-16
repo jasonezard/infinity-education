@@ -22,7 +22,6 @@ import {
 } from '@mui/material';
 import { 
   ArrowBack, 
-  Add as AddIcon, 
   Description as DescriptionIcon,
   AttachFile as AttachFileIcon 
 } from '@mui/icons-material';
@@ -103,9 +102,6 @@ const StudentProfile: React.FC = () => {
     setValueTags(uniqueTags);
   };
 
-  const handleValueTagClick = (valueTag: string) => {
-    setSelectedValueTag(selectedValueTag === valueTag ? null : valueTag);
-  };
 
   const handleGenerateReport = async () => {
     const flaggedRecords = await firestoreService.getFlaggedRecordsByStudent(studentId!);

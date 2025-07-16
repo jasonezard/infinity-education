@@ -12,10 +12,7 @@ import {
   Avatar
 } from '@mui/material';
 import { 
-  AccountCircle,
   Dashboard as DashboardIcon,
-  Add as AddIcon,
-  People as PeopleIcon,
   School as SchoolIcon,
   MenuBook as MenuBookIcon
 } from '@mui/icons-material';
